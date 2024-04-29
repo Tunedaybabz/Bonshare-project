@@ -1,0 +1,356 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&display=swap');
+
+*{
+    margin: 0px;
+    padding: 0px; 
+    font-family: Poppins, sans-serif;
+    box-sizing: border-box;
+    --primary-color: hsla(0, 0%, 100%, 1);
+    --secondary-color: hsla(0, 0%, 0%, 1);
+}
+header > img {
+    position: absolute;
+    width: 115.5px;
+    height: 32px;
+    top: 40px;
+    left: 40px;
+    z-index: 10000;
+}
+
+
+.hero-container{
+    width: 100%;
+    height: 100%;
+    background-image: url("/Assets/Images/Rectangle\ 11.svg");
+    margin-bottom: -5rem;
+    padding: 2rem 0rem;
+    background-position: bottom;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 100vh;
+    width: 100%;
+    
+}
+
+.hero-section{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: row;
+    margin: 4rem auto;
+    justify-content:space-evenly;
+    align-items: center;
+
+}
+.hero-main{
+    color: white;
+    flex: 2;
+    padding: 0px 5rem;
+    align-items: center;
+    gap: 1rem;
+    position: relative;
+}
+
+.hero-heading-text{
+    font-size: 56px;
+    font-weight: 600;
+    line-height: 84px;
+    letter-spacing: 0em;
+    width: 511px;
+    height: 168px;
+    color: var(--primary-color);
+}
+.hero-para{
+    margin-top: 15px;
+    font-family: Poppins;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 24px;
+    letter-spacing: 0em;
+    text-align: left;
+    width: 511px;
+    height: 72px;
+    
+}
+.line-2{
+    position: absolute;
+    left: 105px;
+    bottom: -120px;
+}
+
+.hero-img{
+    width: 40%;
+    height: auto;
+    position: relative;
+}
+
+.hero-icon{
+    width: 50%;
+    height: 40%;
+    position: relative;
+}
+
+.img-1, .img-2, .img-3, .img-4{
+    position: absolute;
+
+}
+.img-1{
+    top: 10px;
+    right: 190px;
+}
+.img-2{
+    top: 160px;
+    left: -80px;
+}
+.img-3{
+    bottom: 250px;
+    right: 240px;
+}
+.img-4{
+    bottom: 100px;
+    left: -40px;
+}
+/* TRAVEL SECTION */
+.travel{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-around;
+    gap: 50px; 
+    padding: 15rem 0rem;
+}
+
+.suv-line{
+    position: relative;
+}
+.line-1{
+    margin-left: 20px;
+    position: absolute;
+    bottom: -400px;
+    right: -106px;
+}
+.suv {
+    position: absolute;
+    bottom:-430px;
+    left: 87px
+
+}
+.travel-left{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    margin-left: 150px;
+    width: 20%;
+}
+/* .travel-img{
+    flex: 1;
+    margin-left: 0px;
+    position: relative;
+} */
+.travel-right{
+    text-align: left;
+    justify-content: left;
+    position: relative;
+    margin-left: 70px;
+    width: 60%;
+}
+
+.line-head{
+    position: absolute;
+    right: 200px;
+    top: 12px;
+}
+h2.travel-right{
+    margin-bottom: 30px;
+}
+
+/* TRAVEL SMART */
+.travel-smart-container{
+    background-image: url("/Assets/Images/travel-bg.svg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 100%;
+    width: 100%;
+    padding: 10rem 1rem;
+}
+.travel-smart{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-around;
+    margin-top: 10rem;
+}
+.travel-smart-left{
+    align-items: center;
+    text-align: left;
+    width: 70%;
+    position: relative;
+    margin-left:80px;
+}
+h2.travel-smart-left{
+    margin-bottom: 30px;
+}
+.line-head2{
+    position: absolute;
+    left: -40px;
+    top: 10px;
+}
+.travel-smart-right{
+    position: relative;
+    margin-right: 200px;
+}
+.travel-img2{
+    position: absolute;
+    top: -200px;
+    right: 40px;
+}
+/* USING APP SECTION  */
+.app{
+    padding: 10rem 1rem;
+}
+h2.app{
+    margin: auto;
+    width: 30rem;
+}
+.app-container{
+    display: flex;
+    margin: 0px auto;
+    width: 80%;
+    gap: 80px;
+}
+.app-container div {
+    width: 33%;
+}
+.h3{
+    margin: 10px 0px;
+}
+/* FOOTER SECTION */
+.footer-container{
+    background-image: url("/Assets/Images/footer-bg.svg");
+    padding: 5rem 5rem;
+    display: flex;
+    justify-content: space-between;
+}
+.footer-icons{
+    display: flex;
+    gap: 40px;
+}
+/* MEDIA QUERIES */
+@media screen and (max-width: 600px) {
+    header > img {
+        top: 40px;
+        left: 40px;
+    }
+    .hero-container{
+        height: 105vh;
+    }
+    .hero-section{
+        flex-direction: column;
+        margin-top: 10rem;
+    }
+    .hero-img{
+        padding: 10rem 0;
+        position: relative;
+    }
+    .hero-icon{
+        position: relative;
+        width: 40vh;
+        height: 80vh;
+        top: -150px;
+    }
+    .img-1, .img-2, .img-3, .img-4{
+        position: absolute;
+    
+    }
+    .img-1{
+        top: 40px;
+        right: -105px;
+    }
+    .img-2{
+        top: 150px;
+        left: -65px;
+    }
+    .img-3{
+        bottom: 550px;
+        right: -65px;
+    }
+    .img-4{
+        bottom: 400px;
+        left: -40px;
+    }
+    /* TRAVEL SECTION */
+    .travel{
+        display: flex;
+        flex-direction: column;
+        margin: 10rem 0; 
+    }
+    .travel-left{
+        position: relative;
+    }
+    .travel-img{
+        position: absolute;
+        top: 100px;
+        right: -100px;
+    }
+    .travel-right{
+        width: 100%;
+        position: relative;
+        bottom: -250px;
+        margin-right: 60px ;
+    }
+    .suv-line{
+        position: relative;
+    }
+    .line-1{
+        position: absolute;
+        left: -250px;
+        top: -510px;
+    }
+    .suv{
+        position: absolute;
+        left: -248px;
+        bottom: -310px;
+    }
+    .line-head{
+        position: absolute;
+        top: 260px;
+        right: 20px;
+    }
+    /* TRAVEL SMART */
+    .line-head2{
+        position: absolute;
+        top: -30px;
+        left: -50px;
+    }
+    .travel-smart{
+        display: block;
+        position: relative;
+        padding: auto;
+    }
+    .travel-smart-left{
+        width: 100%;
+        position: relative;
+        bottom: 40px;
+        right: 15px;
+    }
+    .travel-img2{
+        position: absolute;
+        top: 0px;
+        right: -150px;
+    }
+    /* USING APP */
+    .app{
+        padding: 3rem auto;
+    }
+    .app-container {
+        display: flex;
+        flex-direction: column;
+    }
+    .app-container > div{
+        width: 100%;
+        text-align: center;
+    }
+}
+
